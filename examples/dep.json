@@ -1,0 +1,5 @@
+{"module":"corp/app",
+ "requires":[
+   {"path":"corp/http","version":"[1.0.0,2.0.0)"},
+   {"path":"corp/util","ref":"branch:main"}],
+ "excludes":[{"path":"corp/log","version":"v1.3.0"}]}

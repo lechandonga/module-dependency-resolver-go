@@ -1,0 +1,20 @@
+{
+  "manifest_hash": "sha256:8aff679b8abc2da32a44edffc88a4aad105baa8142ea783cd9d2b701b692ce35",
+  "entries": [
+    {
+      "path": "corp/http",
+      "version": "v1.2.0",
+      "digest": "sha256:60fc7ddc6a3f0d563b2ca37ce120a444482b01edafd489603f70af6d1a81a8f7"
+    },
+    {
+      "path": "corp/log",
+      "version": "v1.1.0",
+      "digest": "sha256:85c26eb84b197348757d4df15d6fdbbfc7df210d0551dc2ed5c9bcdac7532a5f"
+    },
+    {
+      "path": "corp/util",
+      "version": "v0.0.0-20240102030405-abcdef123456",
+      "digest": "sha256:8c0acc60fe500ba210c3cca344d367bc05af5e8ef84b5bad42cbe7245d14abe9"
+    }
+  ]
+}
