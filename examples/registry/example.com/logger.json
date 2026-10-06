@@ -1,0 +1,7 @@
+{
+  "path": "example.com/logger",
+  "versions": [
+    {"version": "v1.5.2", "digest": "sha256:logger-1.5.2", "requires": []},
+    {"version": "v2.0.0", "digest": "sha256:logger-2.0.0", "requires": []}
+  ]
+}

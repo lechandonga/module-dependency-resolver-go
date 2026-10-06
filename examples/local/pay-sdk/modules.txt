@@ -1,0 +1,3 @@
+module example.com/pay-sdk
+
+require example.com/logger v1.5.2

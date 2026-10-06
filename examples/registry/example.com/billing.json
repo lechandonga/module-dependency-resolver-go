@@ -1,0 +1,28 @@
+{
+  "path": "example.com/billing",
+  "versions": [
+    {
+      "version": "v1.2.0",
+      "digest": "sha256:billing-1.2.0",
+      "requires": [
+        {"path": "example.com/logger", "version": ">=1.5.0"}
+      ]
+    },
+    {
+      "version": "v1.3.0",
+      "digest": "sha256:billing-1.3.0",
+      "requires": [
+        {"path": "example.com/logger", "version": ">=1.5.0"},
+        {"path": "example.com/pay-sdk", "version": "v0.0.0-local"}
+      ]
+    },
+    {
+      "version": "v1.4.0",
+      "digest": "sha256:billing-1.4.0",
+      "requires": [
+        {"path": "example.com/logger", "version": ">=1.5.0"},
+        {"path": "example.com/pay-sdk", "version": "v0.0.0-local"}
+      ]
+    }
+  ]
+}

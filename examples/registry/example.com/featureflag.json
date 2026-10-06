@@ -1,0 +1,10 @@
+{
+  "path": "example.com/featureflag",
+  "versions": [
+    {"version": "v0.9.0", "digest": "sha256:ff-0.9.0", "requires": []},
+    {"version": "v1.0.0-rc.1", "digest": "sha256:ff-1.0.0-rc.1", "requires": []}
+  ],
+  "branches": {
+    "main": "v1.0.0-rc.1"
+  }
+}

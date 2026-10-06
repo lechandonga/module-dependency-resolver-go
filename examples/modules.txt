@@ -1,0 +1,19 @@
+// mdr 示例清单。运行：
+//   go run ./cmd/mdr resolve -manifest examples/modules.txt -registry examples/registry -lock examples/modules-lock.json
+//   go run ./cmd/mdr verify  -manifest examples/modules.txt -registry examples/registry -lock examples/modules-lock.json
+module example.com/shop
+
+require (
+	example.com/auth v1.4.0
+	example.com/billing >=1.2.0 <2.0.0
+	example.com/featureflag @main
+)
+
+// auth v1.4.0 间接需要 logger v2.0.0；这里演示把它降级替换到 v1.5.2。
+replace example.com/logger v2.0.0 => example.com/logger v1.5.2
+
+// 把尚未发布的 pay-sdk 指向本地工作区目录。
+replace example.com/pay-sdk => ./local/pay-sdk
+
+// 已知有问题的版本直接排除。
+exclude example.com/billing v1.3.0

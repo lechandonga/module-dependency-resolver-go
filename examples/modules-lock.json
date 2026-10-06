@@ -1,0 +1,75 @@
+{
+  "lock_version": 1,
+  "root": "example.com/shop",
+  "inputs": {
+    "manifest": "sha256:72a303ec3b7cb8db4e465be7ffa2e916fe781b1450e498c83fb9d1f1db11aee7",
+    "registry": "sha256:12ed44b9b6aff1c521a0e0da3c6813db9c6d87de374fe3d93a2df559de2a6746",
+    "locals": {
+      "./local/pay-sdk": "sha256:d51c0f9f30e4f90baddc4efc0188ac33464979ce4df2d9cae786435cd5a58003"
+    }
+  },
+  "modules": [
+    {
+      "path": "example.com/auth",
+      "version": "v1.4.0",
+      "digest": "sha256:auth-1.4.0",
+      "contributors": [
+        {
+          "source": "根清单",
+          "raw": "v1.4.0"
+        }
+      ]
+    },
+    {
+      "path": "example.com/billing",
+      "version": "v1.4.0",
+      "digest": "sha256:billing-1.4.0",
+      "contributors": [
+        {
+          "source": "根清单",
+          "raw": ">=1.2.0 <2.0.0"
+        }
+      ]
+    },
+    {
+      "path": "example.com/featureflag",
+      "version": "v1.0.0-rc.1",
+      "digest": "sha256:ff-1.0.0-rc.1",
+      "contributors": [
+        {
+          "source": "根清单",
+          "raw": "@main (=v1.0.0-rc.1)"
+        }
+      ]
+    },
+    {
+      "path": "example.com/logger",
+      "version": "v1.5.2",
+      "digest": "sha256:logger-1.5.2",
+      "replaced_from": "example.com/logger v2.0.0",
+      "contributors": [
+        {
+          "source": "example.com/auth v1.4.0",
+          "raw": "v2.0.0"
+        },
+        {
+          "source": "example.com/billing v1.4.0",
+          "raw": ">=1.5.0"
+        }
+      ]
+    },
+    {
+      "path": "example.com/pay-sdk",
+      "version": "v0.0.0-local",
+      "digest": "sha256:d51c0f9f30e4f90baddc4efc0188ac33464979ce4df2d9cae786435cd5a58003",
+      "replaced_from": "example.com/pay-sdk（全版本）",
+      "local_path": "./local/pay-sdk",
+      "contributors": [
+        {
+          "source": "example.com/billing v1.4.0",
+          "raw": "v0.0.0-local"
+        }
+      ]
+    }
+  ]
+}
